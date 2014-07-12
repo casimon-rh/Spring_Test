@@ -25,7 +25,7 @@ public class UsuarioDAOTest {
 	@Test
 	public void getUsuarioDAO() {
 		Usuario user = usuarioDAO.getUsuario(1);
-		Assert.assertNotNull("El método para buscar usuario es null", user);
+		Assert.assertNotNull("El metodo para buscar usuario es null", user);
 		for(Post p:user.getPosts()){
 			System.out.println("Posts de usuario: "+p.getTitulo());
 		}
