@@ -28,7 +28,7 @@ public class HibernatePostDAO implements iPostDAO {
 	 */
 	@Override
 	public Post getPost(int id) {
-		// Transaccion programática
+		// Transaccion programatica
 		Session sesion = sessionFactory.openSession();
 		sesion.beginTransaction();
 		Post po = (Post) sesion.get(Post.class, id);
