@@ -12,8 +12,8 @@
 	<bean id="dataSource" class = "com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="org.postgresql.Driver" />
         <property name="jdbcUrl" value="jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/springtest" />
-        <property name="user" value="adminpiegidw" />
-        <property name="password" value="QUxX621TpcsM" /> 
+        <property name="user" value="${DB_USR}" />
+        <property name="password" value="${DB_PSW}" /> 
         <property name="acquireIncrement" value="3" />
         <property name="minPoolSize" value="3" />
         <property name="maxPoolSize" value="15" />
