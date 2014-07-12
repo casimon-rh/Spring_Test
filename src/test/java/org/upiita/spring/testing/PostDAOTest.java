@@ -66,7 +66,7 @@ public class PostDAOTest {
 		Assert.assertNotNull("El Contenido es Nulo",postBD.getContenido());
 		
 		Assert.assertEquals("El Titulo es Distinto",pp.getTitulo(), postBD.getTitulo());
-		Assert.assertNotNull("El Título es Nulo", postBD.getTitulo());
+		Assert.assertNotNull("El Titulo es Nulo", postBD.getTitulo());
 		
 		Assert.assertEquals("La Fecha es Distinta",formato.format(pp.getFechaCreacion()), formato.format(postBD.getFechaCreacion()));
 		Assert.assertNotNull("La Fecha es Nula", postBD.getFechaCreacion());		
