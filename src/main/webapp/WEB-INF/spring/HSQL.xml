@@ -7,8 +7,8 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 	<jdbc:embedded-database id="dataSource" type="HSQL">
-		<jdbc:script location="classpath:estructura-base.sql" />
-		<jdbc:script location="classpath:datos-prueba.sql" />
+		<jdbc:script location="src/main/resources/datos-prueba.sql" />
+		<jdbc:script location="src/main/resources/estructura-base.sql" />
 	</jdbc:embedded-database>
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
