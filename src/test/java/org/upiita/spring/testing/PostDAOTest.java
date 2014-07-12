@@ -75,11 +75,11 @@ public class PostDAOTest {
 	@Test
 	public void getByTitTest(){
 		List<Post> postList= postDAO.getSimilarPost("Titulo");
-		notEmpty(postList,"La colección de post es NullOrEmpty");
+		notEmpty(postList,"La coleccion de post es NullOrEmpty");
 	}
 	@Test
 	public void getByNotTitTest(){
 		List<Post> postList= postDAO.getDifferentPost("asdaoifhiashklklaf");
-		notEmpty(postList,"La colección de post es NullOrEmpty");
+		notEmpty(postList,"La coleccion de post es NullOrEmpty");
 	}
 }
